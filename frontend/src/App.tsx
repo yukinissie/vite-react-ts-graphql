@@ -2,6 +2,7 @@ import { useUsersQuery } from './generated/graphql'
 
 function App() {
   const { data, loading, error } = useUsersQuery()
+  console.log(data)
 
   if (!data || loading) return <p>ローディング中です</p>
   if (error) return <p>エラーが発生しています。</p>

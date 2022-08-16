@@ -1,25 +1,12 @@
 {
   "name": "graphql-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "codegen": "yarn workspace frontend codegen",
-    "dev-front": "yarn workspace frontend dev",
+    "dev-front": "yarn workspace frontend codegen && yarn workspace frontend dev",
     "dev-back": "yarn workspace backend generate && yarn workspace backend dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yukinissie/vite-react-ts-graphql.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yukinissie/vite-react-ts-graphql/issues"
-  },
-  "homepage": "https://github.com/yukinissie/vite-react-ts-graphql#readme",
+  "license": "MIT",
   "workspaces": [
     "frontend",
     "backend"
